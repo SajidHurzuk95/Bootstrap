@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Grid System in bootstrap ==> it uses flexbox internally
+
+        .container or .container-fluid
+        .row
+
+        1 row = 12 cols
+
+        .col
+        size class
+        col-* XS Screen
+        col-sm-* small screen
+        col-md-*
+        col-lg-*
+        col-xl-*
+        col-xxl-*
+
+
+        Box model in css => 
+        width => w-25 w-50 w-75 w-100
+        height => h-25 h-50 h-75 h-100
+        padding => p-3, ps-3, pe-3 pt-2 pb-4
+        margin => m-2 ms-2 me-2 mt-3 mb-5
+        border => border border-3
+     -->
+
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-4 bg-primary">1</div>
+            <div class="col-md-4 col-4 bg-secondary">2</div>
+            <div class="col-md-6 col-4 bg-success">3</div>
+        </div>
+     </div>
+     <br><br>
+
+
+     <!-- Box Model -->
+
+     <div class="h-25 w-25 ms-2 border border-3 border-danger border-bottom-0">
+        
+     </div>
+     <br><br><br>
+
+     <!-- Cards and Shadow -->
+
+     <div class="card w-25 h-25 m-4 shadow">
+        <div class="card-header">Card-Header</div>
+        <div class="card-body">Card-Body</div>
+        <div class="card-footer">Card-Footer</div>
+     </div>
+
+     <!-- Spinner -->
+
+     <div class="spinner spinner-grow m-5 text-primary ">
+     </div>
+     <div class="spinner spinner-border m-5 text-danger ">
+     </div>
+
+     <!-- progress bar -->
+
+     <div class="progress">
+        <div class="progress-bar w-50 bg-success">50%</div>
+     </div>
+     <br>
+     <div class="progress">
+        <div class="progress-bar progress-bar-striped w-50 bg-success">50%</div>
+     </div>
+     <br>
+     <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated w-50 bg-success">50%</div>
+     </div>
+     <br><br>
+
+     <!-- dropdown, dropend,  -->
+
+     <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle m-5" data-bs-toggle="dropdown">Click Me</button>
+
+        <ul class="dropdown-menu">
+            <li class="dropdown-items">Home</li>
+            <li class="dropdown-items">About us</li>
+            <li class="dropdown-items">Contact us</li>
+            <li class="dropdown-items">Career</li>
+            <li class="dropdown-items">Blogs</li>
+        </ul>
+     </div>
+     <br>
+
+     <!-- Modal -->
+     <button class="btn btn-warning m-5" data-bs-toggle="modal" data-bs-target="#my-modal">Show Modal</button>
+     <div class="modal fade" id="my-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Error!
+                </div>
+                <div class="modal-body">
+                    Save Me!!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+</body>
+</html>
